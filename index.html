@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Edge Fitness | Elite Schools, Varsities & Clubs Sports, Nutrition & Custom Kit</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apexGreen: '#00FF66',
+                        apexDark: '#0A0A0A',
+                        apexCard: '#141414',
+                        apexBorder: '#262626'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0A0A0A; color: #FFFFFF; font-family: system-ui, -apple-system, sans-serif; }
+        .glow-green { box-shadow: 0 0 25px rgba(0, 255, 102, 0.25); }
+        .glow-green-lg { box-shadow: 0 0 40px rgba(0, 255, 102, 0.4); }
+        section { scroll-margin-top: 6rem; }
+    </style>
+</head>
+<body class="bg-apexDark text-white antialiased selection:bg-apexGreen selection:text-black">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-apexDark/95 backdrop-blur border-b border-apexBorder py-4 px-6 md:px-12 flex items-center justify-between">
+        <a href="#hero" class="text-2xl font-black tracking-wider text-white flex items-center gap-2">
+            APEX<span class="text-apexGreen">EDGE</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-wide text-neutral-300">
+            <a href="#institutions" class="hover:text-apexGreen transition">Institutions</a>
+            <a href="#sports-directory" class="hover:text-apexGreen transition">A-Z Sports & Nutrition</a>
+            <a href="#apparel" class="hover:text-apexGreen transition">Apex Wear & Kit</a>
+            <a href="#coach-marketplace" class="hover:text-apexGreen transition">Coach Marketplace</a>
+            <a href="#consultation" class="hover:text-apexGreen transition">Consultation</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="#coach-marketplace" class="hidden sm:inline-block border border-apexGreen text-apexGreen hover:bg-apexGreen hover:text-black px-4 py-2 rounded-lg font-bold text-sm transition">
+                Coach Portal
+            </a>
+            <a href="#consultation" class="bg-apexGreen text-black font-extrabold px-5 py-2 rounded-lg hover:glow-green transition text-sm">
+                Get Started
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="relative min-h-[90vh] flex items-center justify-center px-6 py-20 bg-gradient-to-b from-black via-apexDark to-black overflow-hidden border-b border-apexBorder">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#00FF66_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="relative max-w-5xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-apexGreen/10 border border-apexGreen/30 text-apexGreen text-xs font-bold uppercase tracking-widest">
+                <span>🇿🇦 South Africa's Premier Sports Science & Custom Apparel Hub</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-none">
+                BUILT FOR <span class="text-apexGreen underline decoration-apexGreen/40">SCHOOLS,</span> <br class="hidden sm:inline"/>VARSITIES & CLUBS
+            </h1>
+            <p class="max-w-2xl mx-auto text-neutral-400 text-lg sm:text-xl font-medium">
+                We provide complete end-to-end solutions combining sports science, healthy lifestyle education, athletic coaching, and custom apparel design & manufacturing for educational and competitive sporting entities across Africa.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#institutions" class="w-full sm:w-auto bg-apexGreen text-black font-black px-8 py-4 rounded-xl text-lg hover:glow-green-lg transition text-center">
+                    Explore Solutions
+                </a>
+                <a href="#apparel" class="w-full sm:w-auto border border-neutral-700 bg-apexCard hover:border-apexGreen text-white font-bold px-8 py-4 rounded-xl text-lg transition text-center">
+                    Apex Wear & Team Kits
+                </a>
+            </div>
+            <!-- Statistics Banner -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-apexBorder/60 max-w-4xl mx-auto text-center">
+                <div>
+                    <div class="text-3xl sm:text-4xl font-black text-apexGreen">150+</div>
+                    <div class="text-xs text-neutral-400 font-semibold uppercase tracking-wider mt-1">Schools & Varsities</div>
+                </div>
+                <div>
+                    <div class="text-3xl sm:text-4xl font-black text-white">45,000+</div>
+                    <div class="text-xs text-neutral-400 font-semibold uppercase tracking-wider mt-1">Athletes Coached</div>
+                </div>
+                <div>
+                    <div class="text-3xl sm:text-4xl font-black text-apexGreen">100%</div>
+                    <div class="text-xs text-neutral-400 font-semibold uppercase tracking-wider mt-1">Custom Sublimated Kits</div>
+                </div>
+                <div>
+                    <div class="text-3xl sm:text-4xl font-black text-white">50+</div>
+                    <div class="text-xs text-neutral-400 font-semibold uppercase tracking-wider mt-1">Elite Coaches</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Institutions Section -->
+    <section id="institutions" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-apexGreen">Targeted Institutional Solutions</h2>
+            <h3 class="text-3xl sm:text-5xl font-black">ELEVATING EVERY LEVEL OF PLAY</h3>
+            <p class="text-neutral-400 max-w-xl mx-auto">Tailored performance programs, nutrition guidance, and professional teamwear designed specifically for your institution.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-apexCard border border-apexBorder rounded-2xl p-8 flex flex-col justify-between hover:border-apexGreen/50 transition group">
+                <div class="space-y-6">
+                    <div class="w-14 h-14 rounded-xl bg-apexGreen/10 flex items-center justify-center text-apexGreen font-bold text-2xl group-hover:scale-110 transition">🎓</div>
+                    <div>
+                        <div class="text-xs font-bold text-apexGreen uppercase tracking-wider mb-1">High Schools & Prep</div>
+                        <h4 class="text-2xl font-black">School Sports Academies</h4>
+                        <p class="text-sm text-neutral-400 mt-2">Youth S&C + Uniform Design</p>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed">
+                        Injury prevention, movement mechanics, and physical conditioning tailored for high school rugby, cricket, netball, and hockey teams, paired with custom school sports kits.
+                    </p>
+                    <ul class="space-y-3 text-sm text-neutral-300 pt-2 border-t border-neutral-800">
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Age-specific strength & conditioning</li>
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Healthy eating & hydration workshops for teens</li>
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Custom school match jerseys & tracksuits</li>
+                    </ul>
+                </div>
+                <div class="pt-8">
+                    <a href="#consultation" class="block w-full text-center py-3 rounded-xl border border-neutral-700 font-bold hover:bg-apexGreen hover:text-black hover:border-apexGreen transition">
+                        ENQUIRE FOR SCHOOLS
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-apexCard border-2 border-apexGreen rounded-2xl p-8 flex flex-col justify-between glow-green relative group">
+                <div class="absolute -top-3 right-6 bg-apexGreen text-black text-xs font-black uppercase px-3 py-1 rounded-full">Most Popular</div>
+                <div class="space-y-6">
+                    <div class="w-14 h-14 rounded-xl bg-apexGreen/20 flex items-center justify-center text-apexGreen font-bold text-2xl group-hover:scale-110 transition">🏛️</div>
+                    <div>
+                        <div class="text-xs font-bold text-apexGreen uppercase tracking-wider mb-1">Varsity Sport</div>
+                        <h4 class="text-2xl font-black">University Sports Programs</h4>
+                        <p class="text-sm text-neutral-400 mt-2">Varsity Cup & League Prep</p>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed">
+                        High-performance periodized conditioning, nutritional recovery protocols, and professional-grade technical match kits for university sports squads.
+                    </p>
+                    <ul class="space-y-3 text-sm text-neutral-300 pt-2 border-t border-neutral-800">
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Advanced GPS & workload management</li>
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Elite sports nutrition & meal planning</li>
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Premium custom sublimated university kits</li>
+                    </ul>
+                </div>
+                <div class="pt-8">
+                    <a href="#consultation" class="block w-full text-center py-3 rounded-xl bg-apexGreen text-black font-black hover:glow-green transition">
+                        ENQUIRE FOR UNIVERSITIES
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-apexCard border border-apexBorder rounded-2xl p-8 flex flex-col justify-between hover:border-apexGreen/50 transition group">
+                <div class="space-y-6">
+                    <div class="w-14 h-14 rounded-xl bg-apexGreen/10 flex items-center justify-center text-apexGreen font-bold text-2xl group-hover:scale-110 transition">🛡️</div>
+                    <div>
+                        <div class="text-xs font-bold text-apexGreen uppercase tracking-wider mb-1">Community & Pro Clubs</div>
+                        <h4 class="text-2xl font-black">Sports Clubs & Academies</h4>
+                        <p class="text-sm text-neutral-400 mt-2">Rugby, Football, Athletics & Cycling</p>
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed">
+                        Comprehensive conditioning coaching, healthy lifestyle mentoring, and distinctive custom kit manufacturing for local and provincial sports clubs.
+                    </p>
+                    <ul class="space-y-3 text-sm text-neutral-300 pt-2 border-t border-neutral-800">
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Team conditioning & fitness camps</li>
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Healthy living & weight management seminars</li>
+                        <li class="flex items-center gap-2"><span class="text-apexGreen font-bold">✓</span> Fully custom club jerseys, shorts & leisure wear</li>
+                    </ul>
+                </div>
+                <div class="pt-8">
+                    <a href="#consultation" class="block w-full text-center py-3 rounded-xl border border-neutral-700 font-bold hover:bg-apexGreen hover:text-black hover:border-apexGreen transition">
+                        ENQUIRE FOR CLUBS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apex Wear & Custom Kit Manufacturing Division -->
+    <section id="apparel" class="py-24 px-6 md:px-12 max-w-7xl mx-auto bg-black/60 border-y border-apexBorder">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-apexGreen">Apex Wear Division</h2>
+            <h3 class="text-3xl sm:text-5xl font-black">CUSTOM SPORTS KIT & APPAREL DESIGN</h3>
+            <p class="text-neutral-400 max-w-2xl mx-auto">High-performance custom apparel manufactured for schools, universities, provincial, and national sports teams across South Africa and Africa.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-apexCard border border-apexBorder rounded-2xl p-8 space-y-4 hover:border-apexGreen transition">
+                <div class="text-3xl">👕</div>
+                <h4 class="text-xl font-black">Sublimated Match Kits</h4>
+                <p class="text-sm text-neutral-400 leading-relaxed">
+                    Custom-designed rugby jerseys, cricket whites, netball dresses, football strips, and hockey kits featuring your school badge, sponsor logos, and custom color palettes with zero color fading.
+                </p>
+                <div class="pt-4 text-xs font-bold text-apexGreen uppercase tracking-wider">Breathable & Tear-Resistant</div>
+            </div>
+
+            <div class="bg-apexCard border border-apexBorder rounded-2xl p-8 space-y-4 hover:border-apexGreen transition">
+                <div class="text-3xl">🎽</div>
+                <h4 class="text-xl font-black">Training & Leisure Wear</h4>
+                <p class="text-sm text-neutral-400 leading-relaxed">
+                    Personalized training tees, branded hoodies, warmup tracksuits, rain jackets, and compression base layers built for daily school and club training sessions.
+                </p>
+                <div class="pt-4 text-xs font-bold text-apexGreen uppercase tracking-wider">Moisture-Wicking Technology</div>
+            </div>
+
+            <div class="bg-apexCard border border-apexBorder rounded-2xl p-8 space-y-4 hover:border-apexGreen transition">
+                <div class="text-3xl">🎨</div>
+                <h4 class="text-xl font-black">Custom 3D Kit Designer</h4>
+                <p class="text-sm text-neutral-400 leading-relaxed">
+                    Collaborate with our in-house design team to create unique identity kits for your school house, varsity team, or provincial tournament squad before bulk manufacturing.
+                </p>
+                <div class="pt-4 text-xs font-bold text-apexGreen uppercase tracking-wider">Free Sample Mockups</div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="#consultation" class="inline-block bg-apexGreen text-black font-black px-8 py-4 rounded-xl hover:glow-green transition text-sm uppercase tracking-wider">
+                Request Custom Kit Catalog & Samples
+            </a>
+        </div>
+    </section>
+
+    <!-- A-Z South African Sports Directory with Dropdown Accordions -->
+    <section id="sports-directory" class="py-24 px-6 md:px-12 max-w-5xl mx-auto">
+        <div class="text-center space-y-4 mb-12">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-apexGreen">Comprehensive Coverage</h2>
+            <h3 class="text-3xl sm:text-4xl font-black">A–Z SOUTH AFRICAN SPORTS DIRECTORY</h3>
+            <p class="text-neutral-400 max-w-2xl mx-auto">Click any sport below to instantly view specialized fitness conditioning, healthy eating habits, and custom kit specifications.</p>
+        </div>
+
+        <!-- Search Filter Input -->
+        <div class="max-w-md mx-auto mb-8">
+            <input type="text" id="sportSearch" placeholder="Search sport (e.g. Rugby, Netball, Hockey)..." class="w-full bg-apexCard border border-apexBorder rounded-xl px-4 py-3 text-white placeholder-neutral-500 focus:outline-none focus:border-apexGreen text-sm">
+        </div>
+
+        <div id="sportsAccordion" class="space-y-4">
+            <div class="sport-item bg-apexCard border border-apexBorder rounded-xl overflow-hidden">
+                <button onclick="toggleSport(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-lg hover:bg-neutral-900 transition">
+                    <span class="flex items-center gap-3"><span class="text-apexGreen">#</span> Athletics & Track & Field</span>
+                    <span class="transform transition-transform duration-300 text-apexGreen text-xl">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 pt-2 border-t border-apexBorder space-y-4 text-sm text-neutral-300 bg-neutral-950/50">
+                    <div><strong class="text-apexGreen">Fitness & Conditioning:</strong> Explosive plyometrics, sprint mechanics, core stability, and periodized endurance blocks.</div>
+                    <div><strong class="text-apexGreen">Eating & Healthy Habits:</strong> High-carbohydrate loading for race days, clean hydration with natural electrolytes, and lean protein recovery.</div>
+                    <div><strong class="text-apexGreen">Custom Kit Manufacturing:</strong> Lightweight moisture-wicking vests, split shorts, compression tights, and branded warm-up tracksuits.</div>
+                </div>
+            </div>
+
+            <div class="sport-item bg-apexCard border border-apexBorder rounded-xl overflow-hidden">
+                <button onclick="toggleSport(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-lg hover:bg-neutral-900 transition">
+                    <span class="flex items-center gap-3"><span class="text-apexGreen">#</span> Cricket</span>
+                    <span class="transform transition-transform duration-300 text-apexGreen text-xl">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 pt-2 border-t border-apexBorder space-y-4 text-sm text-neutral-300 bg-neutral-950/50">
+                    <div><strong class="text-apexGreen">Fitness & Conditioning:</strong> Rotational core strength for bowlers and batters, shoulder stability, and multi-hour heat acclimatization stamina.</div>
+                    <div><strong class="text-apexGreen">Eating & Healthy Habits:</strong> Sustained energy snacks (nuts, fruit, whole grains), slow-release hydration, and post-match recovery meals.</div>
+                    <div><strong class="text-apexGreen">Custom Kit Manufacturing:</strong> Traditional whites, T20/ODI sublimated colored jerseys, training caps, and moisture-management polos.</div>
+                </div>
+            </div>
+
+            <div class="sport-item bg-apexCard border border-apexBorder rounded-xl overflow-hidden">
+                <button onclick="toggleSport(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-lg hover:bg-neutral-900 transition">
+                    <span class="flex items-center gap-3"><span class="text-apexGreen">#</span> Field Hockey</span>
+                    <span class="transform transition-transform duration-300 text-apexGreen text-xl">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 pt-2 border-t border-apexBorder space-y-4 text-sm text-neutral-300 bg-neutral-950/50">
+                    <div><strong class="text-apexGreen">Fitness & Conditioning:</strong> High-intensity interval training (HIIT), change-of-direction agility, and lower-back endurance for low crouching.</div>
+                    <div><strong class="text-apexGreen">Eating & Healthy Habits:</strong> Pre-match complex carbs, intra-game electrolyte top-ups, and anti-inflammatory recovery nutrition.</div>
+                    <div><strong class="text-apexGreen">Custom Kit Manufacturing:</strong> Lightweight breathable match shirts, athletic skorts/shorts, team socks, and rain-resistant dugout jackets.</div>
+                </div>
+            </div>
+
+            <div class="sport-item bg-apexCard border border-apexBorder rounded-xl overflow-hidden">
+                <button onclick="toggleSport(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-lg hover:bg-neutral-900 transition">
+                    <span class="flex items-center gap-3"><span class="text-apexGreen">#</span> Netball</span>
+                    <span class="transform transition-transform duration-300 text-apexGreen text-xl">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 pt-2 border-t border-apexBorder space-y-4 text-sm text-neutral-300 bg-neutral-950/50">
+                    <div><strong class="text-apexGreen">Fitness & Conditioning:</strong> Ankle stability and proprioception, explosive jumping power, and rapid deceleration training.</div>
+                    <div><strong class="text-apexGreen">Eating & Healthy Habits:</strong> Balanced blood sugar maintenance, lean protein intake, and optimal hydration strategies for indoor/outdoor court conditions.</div>
+                    <div><strong class="text-apexGreen">Custom Kit Manufacturing:</strong> Custom sleeveless netball dresses, bib sets, warm-up tees, and customized kit bags.</div>
+                </div>
+            </div>
+
+            <div class="sport-item bg-apexCard border border-apexBorder rounded-xl overflow-hidden">
+                <button onclick="toggleSport(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-lg hover:bg-neutral-900 transition">
+                    <span class="flex items-center gap-3"><span class="text-apexGreen">#</span> Rugby Union & Sevens</span>
+                    <span class="transform transition-transform duration-300 text-apexGreen text-xl">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 pt-2 border-t border-apexBorder space-y-4 text-sm text-neutral-300 bg-neutral-950/50">
+                    <div><strong class="text-apexGreen">Fitness & Conditioning:</strong> Heavy compound strength training, collision conditioning, neck fortification, and repeated sprint ability (RSA).</div>
+                    <div><strong class="text-apexGreen">Eating & Healthy Habits:</strong> High-protein hypertrophy and recovery meals, clean calorie dense eating for forwards, and lean conditioning diets for backs.</div>
+                    <div><strong class="text-apexGreen">Custom Kit Manufacturing:</strong> Heavy-duty tear-resistant rugby jerseys, silicone grip shorts, compression base-layers, and presentation hoodies.</div>
+                </div>
+            </div>
+
+            <div class="sport-item bg-apexCard border border-apexBorder rounded-xl overflow-hidden">
+                <button onclick="toggleSport(this)" class="w-full px-6 py-4 flex items-center justify-between text-left font-bold text-lg hover:bg-neutral-900 transition">
+                    <span class="flex items-center gap-3"><span class="text-apexGreen">#</span> Soccer / Football</span>
+                    <span class="transform transition-transform duration-300 text-apexGreen text-xl">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 pt-2 border-t border-apexBorder space-y-4 text-sm text-neutral-300 bg-neutral-950/50">
+                    <div><strong class="text-apexGreen">Fitness & Conditioning:</strong> 90-minute aerobic endurance, sprint interval training, and hamstring injury prevention (Nordic protocols).</div>
+                    <div><strong class="text-apexGreen">Eating & Healthy Habits:</strong> Glycogen store optimization, beetroot juice for nitric oxide stamina, and clean electrolyte replenishment.</div>
+                    <div><strong class="text-apexGreen">Custom Kit Manufacturing:</strong> Pro-mesh jerseys, lightweight shorts, matching team socks, and coaches' rain jackets.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coach Marketplace & Expert Sign-Up Portal -->
+    <section id="coach-marketplace" class="py-24 px-6 md:px-12 max-w-7xl mx-auto bg-black/40 border-t border-apexBorder">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-apexGreen/10 border border-apexGreen/30 text-apexGreen text-xs font-bold uppercase tracking-widest">
+                    <span>Expert Coach Network</span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-black">ARE YOU AN ELITE COACH? JOIN & SELL YOUR EXPERTISE</h2>
+                <p class="text-neutral-400 text-lg leading-relaxed">
+                    Are you a certified S&C coach, sports nutritionist, biokineticist, or skills specialist? Join the Apex Edge marketplace, list your digital training programs, meal plans, or coaching slots, and reach thousands of schools, clubs, and athletes across South Africa.
+                </p>
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-apexGreen text-black flex items-center justify-center font-bold text-xs mt-1">✓</div>
+                        <div><strong class="text-white">Instant Storefront:</strong> Publish your customized workout plans, nutrition guides, and team packages.</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-apexGreen text-black flex items-center justify-center font-bold text-xs mt-1">✓</div>
+                        <div><strong class="text-white">Secure ZAR Payouts:</strong> Integrated local payment gateways with automated revenue sharing.</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-apexGreen text-black flex items-center justify-center font-bold text-xs mt-1">✓</div>
+                        <div><strong class="text-white">Institutional Matchmaking:</strong> Get booked directly by schools and sports clubs looking for specialized coaching staff.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coach Registration Card -->
+            <div class="bg-apexCard border border-apexBorder rounded-2xl p-8 shadow-2xl">
+                <h3 class="text-2xl font-black mb-6">Coach Application Portal</h3>
+                <form onsubmit="handleCoachSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-neutral-400 mb-1">Full Name</label>
+                        <input type="text" required placeholder="Coach John Smith" class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-apexGreen text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-neutral-400 mb-1">Email Address</label>
+                        <input type="email" required placeholder="john@apexedge.co.za" class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-apexGreen text-sm">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-neutral-400 mb-1">Specialization</label>
+                            <select class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-apexGreen text-sm">
+                                <option>Strength & Conditioning</option>
+                                <option>Sports Nutrition</option>
+                                <option>Biokinetics & Injury Rehab</option>
+                                <option>Sport-Specific Skills Coach</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-neutral-400 mb-1">Years Experience</label>
+                            <input type="number" required placeholder="5" class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-apexGreen text-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-neutral-400 mb-1">Certifications & Bio</label>
+                        <textarea rows="3" required placeholder="CSCS, REPssa, BA Sport Science..." class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3 text-white focus:outline-none focus:border-apexGreen text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-apexGreen text-black font-black py-4 rounded-xl hover:glow-green transition text-center text-sm uppercase tracking-wider">
+                        Submit Coach Application
+                    </button>
+                    <p id="coachSuccess" class="hidden text-center text-apexGreen text-sm font-bold pt-2">Application received! Our talent director will contact you shortly.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutional Consultation & Contact Section -->
+    <section id="consultation" class="py-24 px-6 md:px-12 max-w-4xl mx-auto">
+        <div class="bg-apexCard border-2 border-apexGreen/50 rounded-3xl p-8 sm:p-12 shadow-2xl relative">
+            <div class="text-center space-y-4 mb-10">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-apexGreen">Book Your Strategy Session</h2>
+                <h3 class="text-3xl sm:text-4xl font-black">START YOUR INSTITUTIONAL TRANSFORMATION</h3>
+                <p class="text-neutral-400 text-sm">Fill out the form below to schedule a consultation with our sports science and custom apparel directors.</p>
+            </div>
+
+            <form onsubmit="handleConsultation(event)" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-neutral-400 mb-2">Contact Name</label>
+                        <input type="text" required placeholder="Principal / Director / Coach Name" class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-apexGreen text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-neutral-400 mb-2">Institution / Club Name</label>
+                        <input type="text" required placeholder="School, Varsity or Club Name" class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-apexGreen text-sm">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-neutral-400 mb-2">Email Address</label>
+                        <input type="email" required placeholder="contact@institution.co.za" class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-apexGreen text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-neutral-400 mb-2">Phone Number (WhatsApp)</label>
+                        <input type="tel" required placeholder="+27 82 000 0000" class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-apexGreen text-sm">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-neutral-400 mb-2">Primary Interest</label>
+                    <select class="w-full bg-black border border-apexBorder rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-apexGreen text-sm">
+                        <option>School Sports Academy & Coaching</option>
+                        <option>University High-Performance S&C</option>
+                        <option>Club Fitness & Conditioning Camp</option>
+                        <option>Custom Team Kit & Apparel Manufacturing (Apex Wear)</option>
+                        <option>Healthy Eating & Lifestyle Workshops</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-apexGreen text-black font-black py-4 rounded-xl hover:glow-green-lg transition text-base uppercase tracking-wider">
+                    Claim Your Consultation
+                </button>
+                <p id="consultSuccess" class="hidden text-center text-apexGreen font-bold pt-2">Thank you! Your consultation request has been successfully dispatched.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-apexBorder py-12 px-6 md:px-12 text-center text-neutral-500 text-sm space-y-4">
+        <div class="flex items-center justify-center gap-2 text-xl font-black text-white">
+            APEX<span class="text-apexGreen">EDGE</span> FITNESS
+        </div>
+        <p>Empowering Schools, Universities, and Sports Clubs across South Africa and Africa with Elite Conditioning, Healthy Living, and Custom Apparel.</p>
+        <p class="text-xs text-neutral-600">&copy; 2026 Apex Edge Fitness (Pty) Ltd. All rights reserved. Centurion, Gauteng, South Africa.</p>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        function toggleSport(button) {
+            const content = button.nextElementSibling;
+            const arrow = button.querySelector('span:last-child');
+            const isOpen = !content.classList.contains('hidden');
+            
+            document.querySelectorAll('#sportsAccordion > div > div').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('#sportsAccordion button span:last-child').forEach(el => el.style.transform = 'rotate(0deg)');
+
+            if (isOpen) {
+                content.classList.add('hidden');
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                content.classList.remove('hidden');
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        document.getElementById('sportSearch').addEventListener('input', function(e) {
+            const term = e.target.value.toLowerCase();
+            const items = document.querySelectorAll('.sport-item');
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(term)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        function handleCoachSubmit(e) {
+            e.preventDefault();
+            document.getElementById('coachSuccess').classList.remove('hidden');
+            e.target.reset();
+        }
+
+        function handleConsultation(e) {
+            e.preventDefault();
+            document.getElementById('consultSuccess').classList.remove('hidden');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
